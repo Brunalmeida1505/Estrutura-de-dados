@@ -1,15 +1,3 @@
-"""
-Estratégia:
-Usei a estrutura de dados pilhas . Para cada '(' ou '[' empilhei.
-Para cada ')' ou ']' verifiquei o topo da pilha — se não corresponder,
-a expressão é MALFORMADA. Ao final, se a pilha estiver vazia, a expressão e bem-formada.
-
-Leitura:
-Se uma linha contém o caractere 'X', considero
-apenas a parte antes do primeiro 'X' como última expressão e então
-encerro o programa atendendo a chave de parada.
-"""
-
 import sys
 
 MAX_CARACTERE = 100
@@ -49,6 +37,18 @@ def main():
             break
         else:
             processa_linha(linha)
+"""
+Estratégia:
+Usei a estrutura de dados pilhas . Para cada '(' ou '[' empilhei.
+Para cada ')' ou ']' verifiquei o topo da pilha — se não corresponder,
+a expressão é malformada. Ao final, se a pilha estiver vazia, a expressão e bem-formada.
+
+Leitura:
+Se uma linha contém o caractere 'X', considero
+apenas a parte antes do primeiro 'X' como última expressão e então
+encerro o programa atendendo a chave de parada.
+"""
+
 
 if __name__ == "__main__":
     main()
